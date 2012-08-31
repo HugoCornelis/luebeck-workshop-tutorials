@@ -1,0 +1,37 @@
+#!/usr/bin/perl -w
+#!/usr/bin/perl -w -d:ptkdb
+#!
+
+
+use strict;
+
+
+use YAML;
+
+my $build_database_yaml = `neurospaces_build --help-all`;
+
+my $build_database = Load($build_database_yaml);
+
+my $all_packages = $build_database->{all_packages};
+
+my $directory = $all_packages->{'luebeck-workshop-tutorials'}->{directory};
+
+system "cd \"$directory\" && luebeck-workshop-tutorials-check";
+
+if ($?)
+{
+    die "$0: *** Error: luebeck-workshop-tutorials-check concludes there is something wrong with your documentation workspace.";
+}
+
+system "neurospaces_sync --enable luebeck-workshop-tutorials --regex luebeck-workshop-tutorials --verbose";
+
+if ($?)
+{
+    die "$0: *** Error: $?";
+}
+else
+{
+    system "neurospaces_update --enable luebeck-workshop-tutorials --regex luebeck-workshop-tutorials --verbose";
+}
+
+
