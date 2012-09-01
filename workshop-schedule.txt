@@ -14,8 +14,8 @@ Monday
 11:00 - 11:15   Loging into workshop resources over the network (Cornelis)
 11:15 - 12:15   Overview of realistic modeling techniques (Beeman)
 12:15  - 13:45   Lunch
-13:45 - 14:45    Introduction to G-3 structure and tools (Cornelis)
-14:45 - 15:45    Getting started modeling with G-3 (Beeman)
+13:45 - 14:45    Getting started modeling with G-3 (Beeman)
+14:45 - 15:45    Introduction to G-3 structure and tools (Cornelis)
 15:45 - 16:15   Coffee
 16:15 - 17:30   Break out sessions
 
