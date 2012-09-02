@@ -1,9 +1,19 @@
-- We assume that everyone will be running G-3 on his own laptop
+- for people wanting to run G-3 on their laptop
   - For people using windows
     - it is advisory to run G-3 over a virtual machine
-    - we will make a CD ROM image available with a useful Oracle Virtual Box snapshot
+    - we will make a USB stick available with a useful Oracle Virtual Box snapshot
+      - install Oracle Virtual Box software
+      - configure the virtual to run the snapshot
 - For those who don't use their laptop, lab PCs are available.
-  - Ask us for how to access the lab PCs with a login and password.
+  - Access the lab PCs with a login and password.
+    - semi01      01-semi_01
+    - ......      ..........
+    - semi20      20-semi_20
+  - switch language in the terminal to english: add to .bashrc the following lines
+          export LANG=en_US.UTF-8
+          export LC_ALL=en_US.UTF-8
+  - copy .simrc to home folder
+      cp /usr/local/poolsoft/genesis-2.3/genesis/startup/.simrc $HOME
 - for dynamic upgrades of the tutorial scripts.
   - workshop wireless LAN
     - wireless name: neurospaces.com

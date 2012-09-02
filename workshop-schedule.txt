@@ -21,8 +21,7 @@ Monday
 
                                     Python introduction (mando)
                                     Basic Unix (Daphne and or Christof)
-                                    The CBI architecture (Hugo)
-                                    More detail on intro tutorials (Beeman)
+                                    CBI perspective on interactive tutorials (Beeman & Cornelis)
 
 17:30 - 19:30    Dinner
 19:30 - 24:00    Hands on instruction, computer lab
