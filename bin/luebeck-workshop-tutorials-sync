@@ -23,7 +23,7 @@ if ($?)
     die "$0: *** Error: luebeck-workshop-tutorials-check concludes there is something wrong with your documentation workspace.";
 }
 
-system "neurospaces_sync --enable luebeck-workshop-tutorials --regex luebeck-workshop-tutorials --verbose";
+system "neurospaces_sync --enable luebeck-workshop-tutorials luebeck-workshop-tutorials --verbose";
 
 if ($?)
 {
@@ -31,7 +31,7 @@ if ($?)
 }
 else
 {
-    system "neurospaces_update --enable luebeck-workshop-tutorials --regex luebeck-workshop-tutorials --verbose";
+    system "neurospaces_update --enable luebeck-workshop-tutorials luebeck-workshop-tutorials --verbose";
 }
 
 
