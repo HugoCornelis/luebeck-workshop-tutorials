@@ -1,21 +1,28 @@
+- lab PCs with G-2 and G-3
+  - Access the lab PCs with a login and password.
+    - semi02      02-semi_02
+    - ......      ..........
+    - semi20      20-semi_20
+  - semi01 is a tutorial distribution account
+    - cd /home/semi01
+    - cp -a tutorials $HOME/
+  - switch language in the terminal to english: add to .bashrc the following lines
+          export LANG=en_US.UTF-8
+          export LC_ALL=en_US.UTF-8
+  - to run genesis 2.3 and chemesis 2
+    - copy .simrc to home folder
+      - cp /usr/local/poolsoft/genesis-2.3/genesis/startup/.simrc $HOME
 - for people wanting to run G-3 on their laptop
   - For people using windows
     - it is advisory to run G-3 over a virtual machine
     - we will make a USB stick available with a useful Oracle Virtual Box snapshot
       - install Oracle Virtual Box software
-      - configure the virtual to run the snapshot
-- For those who don't use their laptop, lab PCs are available.
-  - Access the lab PCs with a login and password.
-    - semi01      01-semi_01
-    - ......      ..........
-    - semi20      20-semi_20
-  - switch language in the terminal to english: add to .bashrc the following lines
-          export LANG=en_US.UTF-8
-          export LC_ALL=en_US.UTF-8
-  - copy .simrc to home folder
-      cp /usr/local/poolsoft/genesis-2.3/genesis/startup/.simrc $HOME
-- for dynamic upgrades of the tutorial scripts.
-  - workshop wireless LAN
+      - configure the virtual box to run the snapshot
+- internet acces
+  - connect to wireless: UzL-Konferenz-Portal
+
+- workshop wireless LAN
+  - for dynamic upgrades of G-3 and the tutorial scripts.
     - wireless name: neurospaces.com
     - connecting will give IP address
   - create the directory '/etc/neurospaces/developer'
@@ -29,7 +36,7 @@ all_packages:
     order: 1000
     version_control:
       port_number: 64738
-      server: 192.168.1.107
+      server: 192.168.1.143
 
    - NOTE: whitespace sensitive, use spaces, not tabs!!  And also include the three dashes!!
 
@@ -39,4 +46,4 @@ neurospaces_upgrade --regex luebeck --repo-pull 192.168.1.143
    - the IP address is dynamic, not fixed, we will keep you informed about the IP address each day.
 
 
-
+neurospaces_upgrade --repo-pull 192.168.1.143
